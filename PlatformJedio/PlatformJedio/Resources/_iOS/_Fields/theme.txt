@@ -1,0 +1,7 @@
+
+heading.small
+heading.subtitle
+text.body
+text.sub
+text.left
+text.right

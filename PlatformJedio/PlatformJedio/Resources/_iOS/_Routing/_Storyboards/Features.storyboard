@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pnq-aB-9l3">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Feature Flags-->
+        <scene sceneID="RRd-dq-fZu">
+            <objects>
+                <viewController id="pnq-aB-9l3" customClass="ResetAppViewController" customModule="PlatformJedio" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WPL-Mh-FaU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4tX-ZY-LAT">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="54V-Z1-ZGm" customClass="UXTableView" customModule="UIToolkits">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="clearFooter" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </tableView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="54V-Z1-ZGm" firstAttribute="leading" secondItem="4tX-ZY-LAT" secondAttribute="leading" id="47y-Yq-QQ9"/>
+                                    <constraint firstAttribute="trailing" secondItem="54V-Z1-ZGm" secondAttribute="trailing" id="EsP-oP-REA"/>
+                                    <constraint firstAttribute="bottom" secondItem="54V-Z1-ZGm" secondAttribute="bottom" id="IUq-UQ-Coh"/>
+                                    <constraint firstItem="54V-Z1-ZGm" firstAttribute="top" secondItem="4tX-ZY-LAT" secondAttribute="top" id="vdp-lH-LwO"/>
+                                </constraints>
+                            </view>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Idb-qI-QpW">
+                                <rect key="frame" x="0.0" y="725" width="414" height="49"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="xNu-q3-cWT"/>
+                                    <barButtonItem title="Reset" id="dTE-RJ-JRx">
+                                        <connections>
+                                            <action selector="reset:" destination="pnq-aB-9l3" id="j7Y-mB-DVa"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="pBg-R6-0Mc"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="4tX-ZY-LAT" firstAttribute="trailing" secondItem="RYP-Rc-3YC" secondAttribute="trailing" id="11s-bc-fhn"/>
+                            <constraint firstItem="Idb-qI-QpW" firstAttribute="trailing" secondItem="RYP-Rc-3YC" secondAttribute="trailing" id="2hA-zb-YtB"/>
+                            <constraint firstItem="Idb-qI-QpW" firstAttribute="leading" secondItem="RYP-Rc-3YC" secondAttribute="leading" id="44c-R0-uq1"/>
+                            <constraint firstItem="RYP-Rc-3YC" firstAttribute="bottom" secondItem="Idb-qI-QpW" secondAttribute="bottom" id="FMR-v6-czW"/>
+                            <constraint firstItem="4tX-ZY-LAT" firstAttribute="bottom" secondItem="Idb-qI-QpW" secondAttribute="top" id="IwD-Tc-Wf7"/>
+                            <constraint firstItem="4tX-ZY-LAT" firstAttribute="top" secondItem="RYP-Rc-3YC" secondAttribute="top" id="Wg1-Wf-FkX"/>
+                            <constraint firstItem="4tX-ZY-LAT" firstAttribute="leading" secondItem="RYP-Rc-3YC" secondAttribute="leading" id="wFv-Mt-NdP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="RYP-Rc-3YC"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Feature Flags" id="hbo-U0-IhW"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="fieldLoader" destination="gag-Q3-nsZ" id="euH-Ah-tST"/>
+                        <outlet property="interactor" destination="0sP-au-HZf" id="tAz-zb-h8p"/>
+                        <outlet property="presenterManager" destination="qU9-kZ-wfZ" id="dLq-CS-LpZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dp6-YI-R4I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="Kyd-ES-6qa" customClass="ListInteractor" customModule="ParticlesKit"/>
+                <customObject id="YIp-2D-N3Z" customClass="TableViewListPresenter" customModule="PlatformParticles">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="intMode">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="tableView" destination="54V-Z1-ZGm" id="TF4-xS-8FF"/>
+                        <outlet property="view" destination="4tX-ZY-LAT" id="J19-px-if8"/>
+                    </connections>
+                </customObject>
+                <customObject id="qU9-kZ-wfZ" customClass="ListPresenterManager" customModule="PlatformParticles">
+                    <connections>
+                        <outlet property="listInteractor" destination="Kyd-ES-6qa" id="91M-4g-dV7"/>
+                        <outletCollection property="presenters" destination="YIp-2D-N3Z" collectionClass="NSMutableArray" id="nUv-ur-JYb"/>
+                    </connections>
+                </customObject>
+                <customObject id="gag-Q3-nsZ" customClass="FieldLoader" customModule="JedioKit">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="definitionFile" value="features.json"/>
+                    </userDefinedRuntimeAttributes>
+                </customObject>
+                <customObject id="0sP-au-HZf" customClass="LocalFeatureFlagsCacheInteractor" customModule="ParticlesKit"/>
+            </objects>
+            <point key="canvasLocation" x="288.80000000000001" y="221.73913043478262"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ObjectPresenterView" customModule="PlatformParticles">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0yK-E1-OXp">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MuH-ke-JbO">
+                            <rect key="frame" x="16" y="4.5" width="248" height="35"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="750" text="Title" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xc3-Lf-8Wz">
+                                    <rect key="frame" x="0.0" y="0.0" width="248" height="20.5"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="Pw6-G8-917"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="styleClass" value="heading.left"/>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subtitle" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JpO-CH-teg">
+                                    <rect key="frame" x="0.0" y="20.5" width="248" height="14.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <color key="textColor" systemColor="secondaryLabelColor"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="styleClass" value="heading.subtitle"/>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="JpO-CH-teg" firstAttribute="top" secondItem="xc3-Lf-8Wz" secondAttribute="bottom" id="CeH-ht-q2T"/>
+                                <constraint firstItem="xc3-Lf-8Wz" firstAttribute="top" secondItem="MuH-ke-JbO" secondAttribute="top" id="JUE-ow-cLP"/>
+                                <constraint firstItem="xc3-Lf-8Wz" firstAttribute="leading" secondItem="MuH-ke-JbO" secondAttribute="leading" id="Vjl-Ka-T5S"/>
+                                <constraint firstAttribute="trailing" secondItem="xc3-Lf-8Wz" secondAttribute="trailing" id="VlH-m7-0sS"/>
+                                <constraint firstItem="JpO-CH-teg" firstAttribute="leading" secondItem="MuH-ke-JbO" secondAttribute="leading" id="kYZ-Ak-kbj"/>
+                                <constraint firstAttribute="trailing" secondItem="JpO-CH-teg" secondAttribute="trailing" id="m5A-tl-StK"/>
+                                <constraint firstAttribute="bottom" secondItem="JpO-CH-teg" secondAttribute="bottom" id="yF3-fT-H0v"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="900" verticalHuggingPriority="900" text="Text" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="555-dm-9OO">
+                            <rect key="frame" x="272" y="11.5" width="32" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" systemColor="secondaryLabelColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="styleClass" value="text.right"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="555-dm-9OO" firstAttribute="leading" secondItem="MuH-ke-JbO" secondAttribute="trailing" constant="8" id="9GP-NM-MDb"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="Dxp-JY-u6Z"/>
+                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="MuH-ke-JbO" secondAttribute="bottom" constant="4" id="FRM-2O-1ka"/>
+                        <constraint firstItem="555-dm-9OO" firstAttribute="trailing" secondItem="0yK-E1-OXp" secondAttribute="trailing" constant="-16" id="KoN-Dt-JS5"/>
+                        <constraint firstItem="MuH-ke-JbO" firstAttribute="centerY" secondItem="0yK-E1-OXp" secondAttribute="centerY" id="aaT-vV-gcd"/>
+                        <constraint firstItem="555-dm-9OO" firstAttribute="centerY" secondItem="0yK-E1-OXp" secondAttribute="centerY" id="bY5-ns-xDB"/>
+                        <constraint firstItem="MuH-ke-JbO" firstAttribute="leading" secondItem="0yK-E1-OXp" secondAttribute="leading" constant="16" id="dTB-25-zHY"/>
+                        <constraint firstItem="MuH-ke-JbO" firstAttribute="top" relation="greaterThanOrEqual" secondItem="0yK-E1-OXp" secondAttribute="top" constant="4" id="rdP-ey-KUu"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="0yK-E1-OXp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="5lV-7w-c6M"/>
+                <constraint firstItem="0yK-E1-OXp" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" id="Ap7-nv-8Vy"/>
+                <constraint firstItem="0yK-E1-OXp" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" id="E7I-TB-EbN"/>
+                <constraint firstItem="0yK-E1-OXp" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Zfl-uR-UBC"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="presenter" destination="eMT-Mz-oXq" id="QGx-uv-mYl"/>
+            </connections>
+            <point key="canvasLocation" x="225.59999999999999" y="-1063.2683658170915"/>
+        </view>
+        <customObject id="eMT-Mz-oXq" customClass="FieldOutputPresenter" customModule="PlatformJedio" customModuleProvider="target">
+            <connections>
+                <outlet property="subtitleLabel" destination="JpO-CH-teg" id="Nho-hO-v33"/>
+                <outlet property="textLabel" destination="555-dm-9OO" id="KDu-uN-Tw3"/>
+                <outlet property="titleLabel" destination="xc3-Lf-8Wz" id="iaM-1r-QYS"/>
+            </connections>
+        </customObject>
+    </objects>
+    <resources>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

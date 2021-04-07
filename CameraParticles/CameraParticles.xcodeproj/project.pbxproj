@@ -1,0 +1,1097 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3147201324BA3A4200057221 /* CameraParticles.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3147200924BA3A4200057221 /* CameraParticles.framework */; };
+		3147201824BA3A4200057221 /* CameraParticlesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3147201724BA3A4200057221 /* CameraParticlesTests.swift */; };
+		3147201A24BA3A4200057221 /* CameraParticles.h in Headers */ = {isa = PBXBuildFile; fileRef = 3147200C24BA3A4200057221 /* CameraParticles.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3147202D24BA3A7600057221 /* VideoTextScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3147202424BA3A7600057221 /* VideoTextScanner.swift */; };
+		3147202E24BA3A7600057221 /* VideoScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3147202524BA3A7600057221 /* VideoScanner.swift */; };
+		3147202F24BA3A7600057221 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3147202724BA3A7600057221 /* CameraViewController.swift */; };
+		3147203024BA3A7600057221 /* VideoProcessingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3147202824BA3A7600057221 /* VideoProcessingViewController.swift */; };
+		3147203124BA3A7600057221 /* TextVideoProcessingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3147202924BA3A7600057221 /* TextVideoProcessingViewController.swift */; };
+		3147203224BA3A7600057221 /* VidepProcessingCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3147202B24BA3A7600057221 /* VidepProcessingCapture.swift */; };
+		3147203324BA3A7600057221 /* CameraCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3147202C24BA3A7600057221 /* CameraCapture.swift */; };
+		31F7606F24BA3E4E001EA293 /* ParticlesKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31F7600924BA3DBA001EA293 /* ParticlesKit.framework */; };
+		31F7607124BA3E4E001EA293 /* PlatformParticles.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31F75FE124BA3DBA001EA293 /* PlatformParticles.framework */; };
+		31F7607324BA3E4E001EA293 /* RoutingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31F75FF724BA3DBA001EA293 /* RoutingKit.framework */; };
+		31F7607524BA3E4F001EA293 /* UIToolkits.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31F75FC924BA3DA9001EA293 /* UIToolkits.framework */; };
+		31F7607724BA3E4F001EA293 /* Utilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31F75FB524BA3DA9001EA293 /* Utilities.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3147201424BA3A4200057221 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3147200024BA3A4200057221 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3147200824BA3A4200057221;
+			remoteInfo = CameraParticles;
+		};
+		31F75FB424BA3DA9001EA293 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31F75FAC24BA3DA9001EA293 /* Utilities.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 31E65AB9216BC9C9008ABEE9;
+			remoteInfo = Utilities;
+		};
+		31F75FB624BA3DA9001EA293 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31F75FAC24BA3DA9001EA293 /* Utilities.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3196823721B791CF00AE0F28;
+			remoteInfo = UtilitiesAppleWatch;
+		};
+		31F75FB824BA3DA9001EA293 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31F75FAC24BA3DA9001EA293 /* Utilities.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 313A536521B9805F00A92D62;
+			remoteInfo = UtilitiesAppleTV;
+		};
+		31F75FBA24BA3DA9001EA293 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31F75FAC24BA3DA9001EA293 /* Utilities.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 31E65AC2216BC9C9008ABEE9;
+			remoteInfo = UtilitiesTests;
+		};
+		31F75FBC24BA3DA9001EA293 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31F75FAC24BA3DA9001EA293 /* Utilities.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 313A536D21B9805F00A92D62;
+			remoteInfo = UtilitiesAppleTVTests;
+		};
+		31F75FC824BA3DA9001EA293 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31F75FBE24BA3DA9001EA293 /* UIToolkits.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 31E65ADD216BC9E1008ABEE9;
+			remoteInfo = UIToolkits;
+		};
+		31F75FCA24BA3DA9001EA293 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31F75FBE24BA3DA9001EA293 /* UIToolkits.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 313EB85D21BB730700BEF926;
+			remoteInfo = UIToolkitsAppleWatch;
+		};
+		31F75FCC24BA3DA9001EA293 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31F75FBE24BA3DA9001EA293 /* UIToolkits.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 313EBB0421BB79AD00BEF926;
+			remoteInfo = UIToolkitsAppleTV;
+		};
+		31F75FCE24BA3DA9001EA293 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31F75FBE24BA3DA9001EA293 /* UIToolkits.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 310C3A0B21D9623E0081E56D;
+			remoteInfo = UIAppToolkits;
+		};
+		31F75FD024BA3DA9001EA293 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31F75FBE24BA3DA9001EA293 /* UIToolkits.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 31E65AE6216BC9E1008ABEE9;
+			remoteInfo = UIToolkitsTests;
+		};
+		31F75FD224BA3DA9001EA293 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31F75FBE24BA3DA9001EA293 /* UIToolkits.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 313EBB0C21BB79AD00BEF926;
+			remoteInfo = UIToolkitsAppleTVTests;
+		};
+		31F75FD424BA3DA9001EA293 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31F75FBE24BA3DA9001EA293 /* UIToolkits.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 310C3A1321D9623F0081E56D;
+			remoteInfo = UIAppToolkitsTests;
+		};
+		31F75FE024BA3DBA001EA293 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31F75FD624BA3DBA001EA293 /* PlatformParticles.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 31ACB72921B0EE2D00391ADF;
+			remoteInfo = PlatformParticles;
+		};
+		31F75FE224BA3DBA001EA293 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31F75FD624BA3DBA001EA293 /* PlatformParticles.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 313EB7C621BB592E00BEF926;
+			remoteInfo = PlatformParticlesAppleWatch;
+		};
+		31F75FE424BA3DBA001EA293 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31F75FD624BA3DBA001EA293 /* PlatformParticles.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 313EBB4321BB7A4B00BEF926;
+			remoteInfo = PlatformParticlesAppleTV;
+		};
+		31F75FE624BA3DBA001EA293 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31F75FD624BA3DBA001EA293 /* PlatformParticles.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 31CFF7C121D7D1F200DE7A79;
+			remoteInfo = MessageParticles;
+		};
+		31F75FE824BA3DBA001EA293 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31F75FD624BA3DBA001EA293 /* PlatformParticles.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 31ACB73221B0EE2D00391ADF;
+			remoteInfo = PlatformParticlesTests;
+		};
+		31F75FEA24BA3DBA001EA293 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31F75FD624BA3DBA001EA293 /* PlatformParticles.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 313EBB4B21BB7A4B00BEF926;
+			remoteInfo = PlatformParticlesAppleTVTests;
+		};
+		31F75FEC24BA3DBA001EA293 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31F75FD624BA3DBA001EA293 /* PlatformParticles.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 31CFF7C921D7D1F300DE7A79;
+			remoteInfo = MessageParticlesTests;
+		};
+		31F75FF624BA3DBA001EA293 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31F75FEE24BA3DBA001EA293 /* RoutingKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 31E65B01216BCA10008ABEE9;
+			remoteInfo = RoutingKit;
+		};
+		31F75FF824BA3DBA001EA293 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31F75FEE24BA3DBA001EA293 /* RoutingKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3196825B21B7947600AE0F28;
+			remoteInfo = RoutingKitAppleWatch;
+		};
+		31F75FFA24BA3DBA001EA293 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31F75FEE24BA3DBA001EA293 /* RoutingKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 313EB22321BA26D700BEF926;
+			remoteInfo = RoutingKitAppleTV;
+		};
+		31F75FFC24BA3DBA001EA293 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31F75FEE24BA3DBA001EA293 /* RoutingKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 31E65B0A216BCA10008ABEE9;
+			remoteInfo = RoutingKitTests;
+		};
+		31F75FFE24BA3DBA001EA293 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31F75FEE24BA3DBA001EA293 /* RoutingKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 313EB22B21BA26D800BEF926;
+			remoteInfo = RoutingKitAppleTVTests;
+		};
+		31F7600824BA3DBA001EA293 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31F7600024BA3DBA001EA293 /* ParticlesKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 311C0FDA21B0E9C4001775BA;
+			remoteInfo = ParticlesKit;
+		};
+		31F7600A24BA3DBA001EA293 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31F7600024BA3DBA001EA293 /* ParticlesKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 319682B421B7967B00AE0F28;
+			remoteInfo = ParticlesKitAppleWatch;
+		};
+		31F7600C24BA3DBA001EA293 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31F7600024BA3DBA001EA293 /* ParticlesKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 313EB16121BA246A00BEF926;
+			remoteInfo = ParticlesKitAppleTV;
+		};
+		31F7600E24BA3DBA001EA293 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31F7600024BA3DBA001EA293 /* ParticlesKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 311C0FE321B0E9C4001775BA;
+			remoteInfo = ParticlesKitTests;
+		};
+		31F7601024BA3DBA001EA293 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31F7600024BA3DBA001EA293 /* ParticlesKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 313EB16921BA246A00BEF926;
+			remoteInfo = ParticlesKitAppleTVTests;
+		};
+		31F7606424BA3E2C001EA293 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31F7600024BA3DBA001EA293 /* ParticlesKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 311C0FD921B0E9C4001775BA;
+			remoteInfo = ParticlesKit;
+		};
+		31F7606624BA3E2C001EA293 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31F75FEE24BA3DBA001EA293 /* RoutingKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 31E65B00216BCA10008ABEE9;
+			remoteInfo = RoutingKit;
+		};
+		31F7606824BA3E2C001EA293 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31F75FAC24BA3DA9001EA293 /* Utilities.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 31E65AB8216BC9C9008ABEE9;
+			remoteInfo = Utilities;
+		};
+		31F7606A24BA3E2C001EA293 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31F75FD624BA3DBA001EA293 /* PlatformParticles.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 31ACB72821B0EE2D00391ADF;
+			remoteInfo = PlatformParticles;
+		};
+		31F7606C24BA3E2C001EA293 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31F75FBE24BA3DA9001EA293 /* UIToolkits.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 31E65ADC216BC9E1008ABEE9;
+			remoteInfo = UIToolkits;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3147200924BA3A4200057221 /* CameraParticles.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CameraParticles.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3147200C24BA3A4200057221 /* CameraParticles.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraParticles.h; sourceTree = "<group>"; };
+		3147200D24BA3A4200057221 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3147201224BA3A4200057221 /* CameraParticlesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CameraParticlesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3147201724BA3A4200057221 /* CameraParticlesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraParticlesTests.swift; sourceTree = "<group>"; };
+		3147201924BA3A4200057221 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3147202424BA3A7600057221 /* VideoTextScanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoTextScanner.swift; sourceTree = "<group>"; };
+		3147202524BA3A7600057221 /* VideoScanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoScanner.swift; sourceTree = "<group>"; };
+		3147202724BA3A7600057221 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		3147202824BA3A7600057221 /* VideoProcessingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoProcessingViewController.swift; sourceTree = "<group>"; };
+		3147202924BA3A7600057221 /* TextVideoProcessingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextVideoProcessingViewController.swift; sourceTree = "<group>"; };
+		3147202B24BA3A7600057221 /* VidepProcessingCapture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VidepProcessingCapture.swift; sourceTree = "<group>"; };
+		3147202C24BA3A7600057221 /* CameraCapture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraCapture.swift; sourceTree = "<group>"; };
+		31F75FAC24BA3DA9001EA293 /* Utilities.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Utilities.xcodeproj; path = ../Utilities/Utilities.xcodeproj; sourceTree = "<group>"; };
+		31F75FBE24BA3DA9001EA293 /* UIToolkits.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UIToolkits.xcodeproj; path = ../UIToolkits/UIToolkits.xcodeproj; sourceTree = "<group>"; };
+		31F75FD624BA3DBA001EA293 /* PlatformParticles.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PlatformParticles.xcodeproj; path = ../PlatformParticles/PlatformParticles.xcodeproj; sourceTree = "<group>"; };
+		31F75FEE24BA3DBA001EA293 /* RoutingKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RoutingKit.xcodeproj; path = ../RoutingKit/RoutingKit.xcodeproj; sourceTree = "<group>"; };
+		31F7600024BA3DBA001EA293 /* ParticlesKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ParticlesKit.xcodeproj; path = ../ParticlesKit/ParticlesKit.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3147200624BA3A4200057221 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31F7607724BA3E4F001EA293 /* Utilities.framework in Frameworks */,
+				31F7607324BA3E4E001EA293 /* RoutingKit.framework in Frameworks */,
+				31F7606F24BA3E4E001EA293 /* ParticlesKit.framework in Frameworks */,
+				31F7607124BA3E4E001EA293 /* PlatformParticles.framework in Frameworks */,
+				31F7607524BA3E4F001EA293 /* UIToolkits.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3147200F24BA3A4200057221 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3147201324BA3A4200057221 /* CameraParticles.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		31471FFF24BA3A4200057221 = {
+			isa = PBXGroup;
+			children = (
+				31F7600024BA3DBA001EA293 /* ParticlesKit.xcodeproj */,
+				31F75FD624BA3DBA001EA293 /* PlatformParticles.xcodeproj */,
+				31F75FEE24BA3DBA001EA293 /* RoutingKit.xcodeproj */,
+				31F75FBE24BA3DA9001EA293 /* UIToolkits.xcodeproj */,
+				31F75FAC24BA3DA9001EA293 /* Utilities.xcodeproj */,
+				3147200B24BA3A4200057221 /* CameraParticles */,
+				3147201624BA3A4200057221 /* CameraParticlesTests */,
+				3147200A24BA3A4200057221 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3147200A24BA3A4200057221 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3147200924BA3A4200057221 /* CameraParticles.framework */,
+				3147201224BA3A4200057221 /* CameraParticlesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3147200B24BA3A4200057221 /* CameraParticles */ = {
+			isa = PBXGroup;
+			children = (
+				3147202A24BA3A7600057221 /* _Capture */,
+				3147202324BA3A7600057221 /* _Scanner */,
+				3147202624BA3A7600057221 /* _ViewControllers */,
+				3147200C24BA3A4200057221 /* CameraParticles.h */,
+				3147200D24BA3A4200057221 /* Info.plist */,
+			);
+			path = CameraParticles;
+			sourceTree = "<group>";
+		};
+		3147201624BA3A4200057221 /* CameraParticlesTests */ = {
+			isa = PBXGroup;
+			children = (
+				3147201724BA3A4200057221 /* CameraParticlesTests.swift */,
+				3147201924BA3A4200057221 /* Info.plist */,
+			);
+			path = CameraParticlesTests;
+			sourceTree = "<group>";
+		};
+		3147202324BA3A7600057221 /* _Scanner */ = {
+			isa = PBXGroup;
+			children = (
+				3147202424BA3A7600057221 /* VideoTextScanner.swift */,
+				3147202524BA3A7600057221 /* VideoScanner.swift */,
+			);
+			path = _Scanner;
+			sourceTree = "<group>";
+		};
+		3147202624BA3A7600057221 /* _ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3147202724BA3A7600057221 /* CameraViewController.swift */,
+				3147202824BA3A7600057221 /* VideoProcessingViewController.swift */,
+				3147202924BA3A7600057221 /* TextVideoProcessingViewController.swift */,
+			);
+			path = _ViewControllers;
+			sourceTree = "<group>";
+		};
+		3147202A24BA3A7600057221 /* _Capture */ = {
+			isa = PBXGroup;
+			children = (
+				3147202B24BA3A7600057221 /* VidepProcessingCapture.swift */,
+				3147202C24BA3A7600057221 /* CameraCapture.swift */,
+			);
+			path = _Capture;
+			sourceTree = "<group>";
+		};
+		31F75FAD24BA3DA9001EA293 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				31F75FB524BA3DA9001EA293 /* Utilities.framework */,
+				31F75FB724BA3DA9001EA293 /* Utilities.framework */,
+				31F75FB924BA3DA9001EA293 /* Utilities.framework */,
+				31F75FBB24BA3DA9001EA293 /* UtilitiesTests.xctest */,
+				31F75FBD24BA3DA9001EA293 /* UtilitiesAppleTVTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		31F75FBF24BA3DA9001EA293 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				31F75FC924BA3DA9001EA293 /* UIToolkits.framework */,
+				31F75FCB24BA3DA9001EA293 /* UIToolkits.framework */,
+				31F75FCD24BA3DA9001EA293 /* UIToolkits.framework */,
+				31F75FCF24BA3DA9001EA293 /* UIAppToolkits.framework */,
+				31F75FD124BA3DA9001EA293 /* UIToolkitsTests.xctest */,
+				31F75FD324BA3DA9001EA293 /* UIToolkitsAppleTVTests.xctest */,
+				31F75FD524BA3DA9001EA293 /* UIAppToolkitsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		31F75FD724BA3DBA001EA293 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				31F75FE124BA3DBA001EA293 /* PlatformParticles.framework */,
+				31F75FE324BA3DBA001EA293 /* PlatformParticles.framework */,
+				31F75FE524BA3DBA001EA293 /* PlatformParticles.framework */,
+				31F75FE724BA3DBA001EA293 /* MessageParticles.framework */,
+				31F75FE924BA3DBA001EA293 /* PlatformParticlesTests.xctest */,
+				31F75FEB24BA3DBA001EA293 /* PlatformParticlesAppleTVTests.xctest */,
+				31F75FED24BA3DBA001EA293 /* MessageParticlesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		31F75FEF24BA3DBA001EA293 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				31F75FF724BA3DBA001EA293 /* RoutingKit.framework */,
+				31F75FF924BA3DBA001EA293 /* RoutingKit.framework */,
+				31F75FFB24BA3DBA001EA293 /* RoutingKit.framework */,
+				31F75FFD24BA3DBA001EA293 /* RoutingKitTests.xctest */,
+				31F75FFF24BA3DBA001EA293 /* RoutingKitAppleTVTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		31F7600124BA3DBA001EA293 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				31F7600924BA3DBA001EA293 /* ParticlesKit.framework */,
+				31F7600B24BA3DBA001EA293 /* ParticlesKit.framework */,
+				31F7600D24BA3DBA001EA293 /* ParticlesKit.framework */,
+				31F7600F24BA3DBA001EA293 /* ParticlesKitTests.xctest */,
+				31F7601124BA3DBA001EA293 /* ParticlesKitAppleTVTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3147200424BA3A4200057221 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3147201A24BA3A4200057221 /* CameraParticles.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3147200824BA3A4200057221 /* CameraParticles */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3147201D24BA3A4200057221 /* Build configuration list for PBXNativeTarget "CameraParticles" */;
+			buildPhases = (
+				3147200424BA3A4200057221 /* Headers */,
+				3147200524BA3A4200057221 /* Sources */,
+				3147200624BA3A4200057221 /* Frameworks */,
+				3147200724BA3A4200057221 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				31F7606524BA3E2C001EA293 /* PBXTargetDependency */,
+				31F7606724BA3E2C001EA293 /* PBXTargetDependency */,
+				31F7606924BA3E2C001EA293 /* PBXTargetDependency */,
+				31F7606B24BA3E2C001EA293 /* PBXTargetDependency */,
+				31F7606D24BA3E2C001EA293 /* PBXTargetDependency */,
+			);
+			name = CameraParticles;
+			productName = CameraParticles;
+			productReference = 3147200924BA3A4200057221 /* CameraParticles.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3147201124BA3A4200057221 /* CameraParticlesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3147202024BA3A4200057221 /* Build configuration list for PBXNativeTarget "CameraParticlesTests" */;
+			buildPhases = (
+				3147200E24BA3A4200057221 /* Sources */,
+				3147200F24BA3A4200057221 /* Frameworks */,
+				3147201024BA3A4200057221 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3147201524BA3A4200057221 /* PBXTargetDependency */,
+			);
+			name = CameraParticlesTests;
+			productName = CameraParticlesTests;
+			productReference = 3147201224BA3A4200057221 /* CameraParticlesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3147200024BA3A4200057221 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1200;
+				ORGANIZATIONNAME = "Qiang Huang";
+				TargetAttributes = {
+					3147200824BA3A4200057221 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					3147201124BA3A4200057221 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = 3147200324BA3A4200057221 /* Build configuration list for PBXProject "CameraParticles" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 31471FFF24BA3A4200057221;
+			productRefGroup = 3147200A24BA3A4200057221 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 31F7600124BA3DBA001EA293 /* Products */;
+					ProjectRef = 31F7600024BA3DBA001EA293 /* ParticlesKit.xcodeproj */;
+				},
+				{
+					ProductGroup = 31F75FD724BA3DBA001EA293 /* Products */;
+					ProjectRef = 31F75FD624BA3DBA001EA293 /* PlatformParticles.xcodeproj */;
+				},
+				{
+					ProductGroup = 31F75FEF24BA3DBA001EA293 /* Products */;
+					ProjectRef = 31F75FEE24BA3DBA001EA293 /* RoutingKit.xcodeproj */;
+				},
+				{
+					ProductGroup = 31F75FBF24BA3DA9001EA293 /* Products */;
+					ProjectRef = 31F75FBE24BA3DA9001EA293 /* UIToolkits.xcodeproj */;
+				},
+				{
+					ProductGroup = 31F75FAD24BA3DA9001EA293 /* Products */;
+					ProjectRef = 31F75FAC24BA3DA9001EA293 /* Utilities.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				3147200824BA3A4200057221 /* CameraParticles */,
+				3147201124BA3A4200057221 /* CameraParticlesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		31F75FB524BA3DA9001EA293 /* Utilities.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Utilities.framework;
+			remoteRef = 31F75FB424BA3DA9001EA293 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		31F75FB724BA3DA9001EA293 /* Utilities.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Utilities.framework;
+			remoteRef = 31F75FB624BA3DA9001EA293 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		31F75FB924BA3DA9001EA293 /* Utilities.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Utilities.framework;
+			remoteRef = 31F75FB824BA3DA9001EA293 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		31F75FBB24BA3DA9001EA293 /* UtilitiesTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = UtilitiesTests.xctest;
+			remoteRef = 31F75FBA24BA3DA9001EA293 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		31F75FBD24BA3DA9001EA293 /* UtilitiesAppleTVTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = UtilitiesAppleTVTests.xctest;
+			remoteRef = 31F75FBC24BA3DA9001EA293 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		31F75FC924BA3DA9001EA293 /* UIToolkits.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = UIToolkits.framework;
+			remoteRef = 31F75FC824BA3DA9001EA293 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		31F75FCB24BA3DA9001EA293 /* UIToolkits.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = UIToolkits.framework;
+			remoteRef = 31F75FCA24BA3DA9001EA293 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		31F75FCD24BA3DA9001EA293 /* UIToolkits.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = UIToolkits.framework;
+			remoteRef = 31F75FCC24BA3DA9001EA293 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		31F75FCF24BA3DA9001EA293 /* UIAppToolkits.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = UIAppToolkits.framework;
+			remoteRef = 31F75FCE24BA3DA9001EA293 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		31F75FD124BA3DA9001EA293 /* UIToolkitsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = UIToolkitsTests.xctest;
+			remoteRef = 31F75FD024BA3DA9001EA293 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		31F75FD324BA3DA9001EA293 /* UIToolkitsAppleTVTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = UIToolkitsAppleTVTests.xctest;
+			remoteRef = 31F75FD224BA3DA9001EA293 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		31F75FD524BA3DA9001EA293 /* UIAppToolkitsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = UIAppToolkitsTests.xctest;
+			remoteRef = 31F75FD424BA3DA9001EA293 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		31F75FE124BA3DBA001EA293 /* PlatformParticles.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = PlatformParticles.framework;
+			remoteRef = 31F75FE024BA3DBA001EA293 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		31F75FE324BA3DBA001EA293 /* PlatformParticles.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = PlatformParticles.framework;
+			remoteRef = 31F75FE224BA3DBA001EA293 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		31F75FE524BA3DBA001EA293 /* PlatformParticles.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = PlatformParticles.framework;
+			remoteRef = 31F75FE424BA3DBA001EA293 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		31F75FE724BA3DBA001EA293 /* MessageParticles.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MessageParticles.framework;
+			remoteRef = 31F75FE624BA3DBA001EA293 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		31F75FE924BA3DBA001EA293 /* PlatformParticlesTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = PlatformParticlesTests.xctest;
+			remoteRef = 31F75FE824BA3DBA001EA293 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		31F75FEB24BA3DBA001EA293 /* PlatformParticlesAppleTVTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = PlatformParticlesAppleTVTests.xctest;
+			remoteRef = 31F75FEA24BA3DBA001EA293 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		31F75FED24BA3DBA001EA293 /* MessageParticlesTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = MessageParticlesTests.xctest;
+			remoteRef = 31F75FEC24BA3DBA001EA293 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		31F75FF724BA3DBA001EA293 /* RoutingKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RoutingKit.framework;
+			remoteRef = 31F75FF624BA3DBA001EA293 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		31F75FF924BA3DBA001EA293 /* RoutingKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RoutingKit.framework;
+			remoteRef = 31F75FF824BA3DBA001EA293 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		31F75FFB24BA3DBA001EA293 /* RoutingKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RoutingKit.framework;
+			remoteRef = 31F75FFA24BA3DBA001EA293 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		31F75FFD24BA3DBA001EA293 /* RoutingKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RoutingKitTests.xctest;
+			remoteRef = 31F75FFC24BA3DBA001EA293 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		31F75FFF24BA3DBA001EA293 /* RoutingKitAppleTVTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RoutingKitAppleTVTests.xctest;
+			remoteRef = 31F75FFE24BA3DBA001EA293 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		31F7600924BA3DBA001EA293 /* ParticlesKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ParticlesKit.framework;
+			remoteRef = 31F7600824BA3DBA001EA293 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		31F7600B24BA3DBA001EA293 /* ParticlesKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ParticlesKit.framework;
+			remoteRef = 31F7600A24BA3DBA001EA293 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		31F7600D24BA3DBA001EA293 /* ParticlesKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ParticlesKit.framework;
+			remoteRef = 31F7600C24BA3DBA001EA293 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		31F7600F24BA3DBA001EA293 /* ParticlesKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ParticlesKitTests.xctest;
+			remoteRef = 31F7600E24BA3DBA001EA293 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		31F7601124BA3DBA001EA293 /* ParticlesKitAppleTVTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ParticlesKitAppleTVTests.xctest;
+			remoteRef = 31F7601024BA3DBA001EA293 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3147200724BA3A4200057221 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3147201024BA3A4200057221 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3147200524BA3A4200057221 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3147203324BA3A7600057221 /* CameraCapture.swift in Sources */,
+				3147203224BA3A7600057221 /* VidepProcessingCapture.swift in Sources */,
+				3147202E24BA3A7600057221 /* VideoScanner.swift in Sources */,
+				3147203024BA3A7600057221 /* VideoProcessingViewController.swift in Sources */,
+				3147203124BA3A7600057221 /* TextVideoProcessingViewController.swift in Sources */,
+				3147202D24BA3A7600057221 /* VideoTextScanner.swift in Sources */,
+				3147202F24BA3A7600057221 /* CameraViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3147200E24BA3A4200057221 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3147201824BA3A4200057221 /* CameraParticlesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3147201524BA3A4200057221 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3147200824BA3A4200057221 /* CameraParticles */;
+			targetProxy = 3147201424BA3A4200057221 /* PBXContainerItemProxy */;
+		};
+		31F7606524BA3E2C001EA293 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ParticlesKit;
+			targetProxy = 31F7606424BA3E2C001EA293 /* PBXContainerItemProxy */;
+		};
+		31F7606724BA3E2C001EA293 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RoutingKit;
+			targetProxy = 31F7606624BA3E2C001EA293 /* PBXContainerItemProxy */;
+		};
+		31F7606924BA3E2C001EA293 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Utilities;
+			targetProxy = 31F7606824BA3E2C001EA293 /* PBXContainerItemProxy */;
+		};
+		31F7606B24BA3E2C001EA293 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PlatformParticles;
+			targetProxy = 31F7606A24BA3E2C001EA293 /* PBXContainerItemProxy */;
+		};
+		31F7606D24BA3E2C001EA293 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UIToolkits;
+			targetProxy = 31F7606C24BA3E2C001EA293 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3147201B24BA3A4200057221 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3147201C24BA3A4200057221 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3147201E24BA3A4200057221 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = XKF9424552;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CameraParticles/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = www.craziapps.CameraParticles;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3147201F24BA3A4200057221 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = XKF9424552;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CameraParticles/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = www.craziapps.CameraParticles;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3147202124BA3A4200057221 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XKF9424552;
+				INFOPLIST_FILE = CameraParticlesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = www.craziapps.CameraParticlesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3147202224BA3A4200057221 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XKF9424552;
+				INFOPLIST_FILE = CameraParticlesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = www.craziapps.CameraParticlesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3147200324BA3A4200057221 /* Build configuration list for PBXProject "CameraParticles" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3147201B24BA3A4200057221 /* Debug */,
+				3147201C24BA3A4200057221 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3147201D24BA3A4200057221 /* Build configuration list for PBXNativeTarget "CameraParticles" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3147201E24BA3A4200057221 /* Debug */,
+				3147201F24BA3A4200057221 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3147202024BA3A4200057221 /* Build configuration list for PBXNativeTarget "CameraParticlesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3147202124BA3A4200057221 /* Debug */,
+				3147202224BA3A4200057221 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3147200024BA3A4200057221 /* Project object */;
+}

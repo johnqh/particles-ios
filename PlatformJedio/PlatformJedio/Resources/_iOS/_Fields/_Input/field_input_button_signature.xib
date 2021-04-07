@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Sqd-WX-jVY" customClass="ObjectPresenterView" customModule="PlatformParticles">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="96"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OnA-du-GDf">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="96"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="800" verticalHuggingPriority="800" horizontalCompressionResistancePriority="800" verticalCompressionResistancePriority="800" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rPZ-zS-wdk">
+                            <rect key="frame" x="16" y="8" width="288" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="styleClass" value="h1"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HcS-la-waI">
+                            <rect key="frame" x="16" y="36.5" width="288" height="43.5"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="43.5" id="EbR-3Z-WUB"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailingMargin" secondItem="rPZ-zS-wdk" secondAttribute="trailing" constant="8" id="2Vw-KV-0Xi"/>
+                        <constraint firstItem="rPZ-zS-wdk" firstAttribute="leading" secondItem="OnA-du-GDf" secondAttribute="leadingMargin" constant="8" id="B8m-rO-gRb"/>
+                        <constraint firstAttribute="trailing" secondItem="HcS-la-waI" secondAttribute="trailing" constant="16" id="L1l-xI-iiF"/>
+                        <constraint firstItem="rPZ-zS-wdk" firstAttribute="top" secondItem="OnA-du-GDf" secondAttribute="topMargin" id="QnW-hW-vbc"/>
+                        <constraint firstItem="HcS-la-waI" firstAttribute="top" secondItem="rPZ-zS-wdk" secondAttribute="bottom" constant="8" id="enh-GF-VY1"/>
+                        <constraint firstAttribute="bottom" secondItem="HcS-la-waI" secondAttribute="bottom" constant="16" id="jmi-sx-VcG"/>
+                        <constraint firstItem="HcS-la-waI" firstAttribute="leading" secondItem="OnA-du-GDf" secondAttribute="leading" constant="16" id="vBF-26-SFW"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="OnA-du-GDf" firstAttribute="trailing" secondItem="Sqd-WX-jVY" secondAttribute="trailing" id="8OU-Hi-258"/>
+                <constraint firstItem="OnA-du-GDf" firstAttribute="top" secondItem="Sqd-WX-jVY" secondAttribute="top" id="DSv-NV-E3W"/>
+                <constraint firstItem="OnA-du-GDf" firstAttribute="leading" secondItem="Sqd-WX-jVY" secondAttribute="leading" id="MK7-e8-3IX"/>
+                <constraint firstItem="OnA-du-GDf" firstAttribute="bottom" secondItem="Sqd-WX-jVY" secondAttribute="bottom" id="MPI-GS-ikp"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="presenter" destination="Gh0-n4-pLO" id="BeZ-RF-n2G"/>
+            </connections>
+            <point key="canvasLocation" x="225.59999999999999" y="-1017.3913043478261"/>
+        </view>
+        <customObject id="Gh0-n4-pLO" customClass="FieldButtonSignatureInputPresenter" customModule="PlatformJedio" customModuleProvider="target">
+            <connections>
+                <outlet property="button" destination="HcS-la-waI" id="hni-46-x7u"/>
+                <outlet property="titleLabel" destination="rPZ-zS-wdk" id="08u-mK-tb9"/>
+            </connections>
+        </customObject>
+    </objects>
+</document>

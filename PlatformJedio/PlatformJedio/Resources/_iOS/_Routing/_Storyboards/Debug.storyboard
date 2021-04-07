@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nYD-3S-u5Q">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Debug Settings-->
+        <scene sceneID="gb7-sv-P6r">
+            <objects>
+                <viewController id="nYD-3S-u5Q" customClass="ResetAppViewController" customModule="PlatformJedio" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CDY-Gq-6fa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q2j-U9-02K">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="Ae0-5D-4B8" customClass="UXTableView" customModule="UIToolkits">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="clearFooter" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </tableView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Ae0-5D-4B8" secondAttribute="trailing" id="3y5-vx-Haz"/>
+                                    <constraint firstItem="Ae0-5D-4B8" firstAttribute="top" secondItem="Q2j-U9-02K" secondAttribute="top" id="5j5-W9-JyP"/>
+                                    <constraint firstItem="Ae0-5D-4B8" firstAttribute="bottom" secondItem="Q2j-U9-02K" secondAttribute="bottom" id="63N-qU-crc"/>
+                                    <constraint firstItem="Ae0-5D-4B8" firstAttribute="leading" secondItem="Q2j-U9-02K" secondAttribute="leading" id="8OE-Jh-Npo"/>
+                                </constraints>
+                            </view>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e58-7W-Xsm">
+                                <rect key="frame" x="0.0" y="725" width="414" height="49"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="2BU-pb-Re2"/>
+                                    <barButtonItem title="Reset" id="E5A-k2-mSA">
+                                        <connections>
+                                            <action selector="reset:" destination="nYD-3S-u5Q" id="RFy-df-Z89"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="BGT-G6-DyA"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Q2j-U9-02K" firstAttribute="leading" secondItem="LbC-fS-mRg" secondAttribute="leading" id="8jp-KQ-U6b"/>
+                            <constraint firstItem="Q2j-U9-02K" firstAttribute="top" secondItem="LbC-fS-mRg" secondAttribute="top" id="9DA-p8-qWD"/>
+                            <constraint firstItem="Q2j-U9-02K" firstAttribute="trailing" secondItem="LbC-fS-mRg" secondAttribute="trailing" id="9b3-pa-gIi"/>
+                            <constraint firstItem="Q2j-U9-02K" firstAttribute="bottom" secondItem="e58-7W-Xsm" secondAttribute="top" id="Fvw-xU-PaO"/>
+                            <constraint firstItem="e58-7W-Xsm" firstAttribute="bottom" secondItem="LbC-fS-mRg" secondAttribute="bottom" id="QF6-a8-rVD"/>
+                            <constraint firstItem="e58-7W-Xsm" firstAttribute="leading" secondItem="LbC-fS-mRg" secondAttribute="leading" id="bel-sg-Trh"/>
+                            <constraint firstItem="e58-7W-Xsm" firstAttribute="trailing" secondItem="LbC-fS-mRg" secondAttribute="trailing" id="iKy-rC-W1v"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LbC-fS-mRg"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Debug Settings" id="Lzy-dF-4Xy"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="bottomConstraint" destination="QF6-a8-rVD" id="oke-yo-AZk"/>
+                        <outlet property="fieldLoader" destination="v0b-DO-ZgD" id="pA9-lY-6ik"/>
+                        <outlet property="interactor" destination="T0s-LT-LNM" id="sCZ-ZQ-vmj"/>
+                        <outlet property="presenterManager" destination="Ei5-Gr-Ahq" id="68n-DJ-5yW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jJU-CG-HCR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="BTc-Ys-7Rz" customClass="ListInteractor" customModule="ParticlesKit"/>
+                <customObject id="Dyd-ZG-mQA" customClass="TableViewListPresenter" customModule="PlatformParticles">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="intMode">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="tableView" destination="Ae0-5D-4B8" id="sHB-ee-ee2"/>
+                        <outlet property="view" destination="Q2j-U9-02K" id="Oeh-eJ-2Bc"/>
+                    </connections>
+                </customObject>
+                <customObject id="Ei5-Gr-Ahq" customClass="ListPresenterManager" customModule="PlatformParticles">
+                    <connections>
+                        <outlet property="listInteractor" destination="BTc-Ys-7Rz" id="xyj-8p-tAB"/>
+                        <outletCollection property="presenters" destination="Dyd-ZG-mQA" collectionClass="NSMutableArray" id="s9D-In-8LI"/>
+                    </connections>
+                </customObject>
+                <customObject id="v0b-DO-ZgD" customClass="FieldLoader" customModule="JedioKit">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="definitionFile" value="debug.json"/>
+                    </userDefinedRuntimeAttributes>
+                </customObject>
+                <customObject id="T0s-LT-LNM" customClass="LocalDebugCacheInteractor" customModule="ParticlesKit"/>
+            </objects>
+            <point key="canvasLocation" x="288.80000000000001" y="221.73913043478262"/>
+        </scene>
+    </scenes>
+</document>

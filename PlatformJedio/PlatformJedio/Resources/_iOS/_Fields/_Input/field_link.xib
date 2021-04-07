@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <customObject id="eMT-Mz-oXq" customClass="FieldInputPresenter" customModule="PlatformJedio" customModuleProvider="target">
+            <connections>
+                <outlet property="subtitleLabel" destination="Dvo-EA-wcz" id="GZk-cR-t1l"/>
+                <outlet property="titleLabel" destination="NFw-O1-6hh" id="GuE-Jf-7Q6"/>
+            </connections>
+        </customObject>
+        <view contentMode="scaleToFill" id="wdl-6b-ZIq" customClass="ObjectPresenterView" customModule="PlatformParticles">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TjN-Bh-I5j">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lg1-im-5F6">
+                            <rect key="frame" x="16" y="16.5" width="288" height="31.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="750" text="Title" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NFw-O1-6hh">
+                                    <rect key="frame" x="0.0" y="0.0" width="288" height="17"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="styleClass" value="heading.small"/>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subtitle" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dvo-EA-wcz">
+                                    <rect key="frame" x="0.0" y="17" width="288" height="14.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <color key="textColor" systemColor="secondaryLabelColor"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="styleClass" value="heading.subtitle"/>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="Dvo-EA-wcz" secondAttribute="trailing" id="2L8-ho-qh4"/>
+                                <constraint firstItem="Dvo-EA-wcz" firstAttribute="leading" secondItem="Lg1-im-5F6" secondAttribute="leading" id="Em6-Vk-rai"/>
+                                <constraint firstItem="NFw-O1-6hh" firstAttribute="top" secondItem="Lg1-im-5F6" secondAttribute="top" id="MOv-dX-kgm"/>
+                                <constraint firstItem="Dvo-EA-wcz" firstAttribute="top" secondItem="NFw-O1-6hh" secondAttribute="bottom" id="djo-bD-Z2Q"/>
+                                <constraint firstAttribute="bottom" secondItem="Dvo-EA-wcz" secondAttribute="bottom" id="fSQ-yw-LYE"/>
+                                <constraint firstItem="NFw-O1-6hh" firstAttribute="leading" secondItem="Lg1-im-5F6" secondAttribute="leading" id="p2i-kF-V5i"/>
+                                <constraint firstAttribute="trailing" secondItem="NFw-O1-6hh" secondAttribute="trailing" id="qep-iw-uEy"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="Lg1-im-5F6" firstAttribute="centerY" secondItem="TjN-Bh-I5j" secondAttribute="centerY" id="2EA-eu-0Zw"/>
+                        <constraint firstAttribute="trailing" secondItem="Lg1-im-5F6" secondAttribute="trailing" constant="16" id="54z-SW-l4R"/>
+                        <constraint firstItem="Lg1-im-5F6" firstAttribute="leading" secondItem="TjN-Bh-I5j" secondAttribute="leading" constant="16" id="C9e-e0-eKQ"/>
+                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Lg1-im-5F6" secondAttribute="bottom" constant="4" id="V3B-pd-VNF"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="mNH-ef-biH"/>
+                        <constraint firstItem="Lg1-im-5F6" firstAttribute="top" relation="greaterThanOrEqual" secondItem="TjN-Bh-I5j" secondAttribute="top" constant="4" id="sh0-3A-1nm"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="TjN-Bh-I5j" firstAttribute="leading" secondItem="wdl-6b-ZIq" secondAttribute="leading" id="XIx-B5-6iI"/>
+                <constraint firstItem="TjN-Bh-I5j" firstAttribute="bottom" secondItem="wdl-6b-ZIq" secondAttribute="bottom" id="bhc-Si-PCS"/>
+                <constraint firstItem="TjN-Bh-I5j" firstAttribute="trailing" secondItem="wdl-6b-ZIq" secondAttribute="trailing" id="cyR-VO-Efu"/>
+                <constraint firstItem="TjN-Bh-I5j" firstAttribute="top" secondItem="wdl-6b-ZIq" secondAttribute="top" id="sBj-aL-4XM"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="presenter" destination="eMT-Mz-oXq" id="r0H-3a-Ivd"/>
+            </connections>
+            <point key="canvasLocation" x="225.59999999999999" y="-1063.2683658170915"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

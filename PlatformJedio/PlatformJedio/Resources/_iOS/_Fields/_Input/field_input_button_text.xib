@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ObjectPresenterView" customModule="PlatformParticles">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="96"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0yK-E1-OXp">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="96"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="800" verticalHuggingPriority="800" horizontalCompressionResistancePriority="800" verticalCompressionResistancePriority="800" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xc3-Lf-8Wz">
+                            <rect key="frame" x="16" y="8" width="288" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="styleClass" value="h1"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xiH-OR-VFM">
+                            <rect key="frame" x="16" y="36.5" width="288" height="43.5"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="43.5" id="lar-JN-8KX"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="xiH-OR-VFM" secondAttribute="trailing" constant="16" id="0ji-mh-hvc"/>
+                        <constraint firstItem="xc3-Lf-8Wz" firstAttribute="leading" secondItem="0yK-E1-OXp" secondAttribute="leadingMargin" constant="8" id="5Ac-nq-Lgm"/>
+                        <constraint firstAttribute="trailingMargin" secondItem="xc3-Lf-8Wz" secondAttribute="trailing" constant="8" id="631-YP-rDK"/>
+                        <constraint firstItem="xiH-OR-VFM" firstAttribute="top" secondItem="xc3-Lf-8Wz" secondAttribute="bottom" constant="8" id="FuD-EC-NiW"/>
+                        <constraint firstAttribute="bottom" secondItem="xiH-OR-VFM" secondAttribute="bottom" constant="16" id="nOK-rl-NbD"/>
+                        <constraint firstItem="xc3-Lf-8Wz" firstAttribute="top" secondItem="0yK-E1-OXp" secondAttribute="topMargin" id="oLv-Qk-jYK"/>
+                        <constraint firstItem="xiH-OR-VFM" firstAttribute="leading" secondItem="0yK-E1-OXp" secondAttribute="leading" constant="16" id="yeN-5M-CHj"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="0yK-E1-OXp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="5lV-7w-c6M"/>
+                <constraint firstItem="0yK-E1-OXp" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" id="Ap7-nv-8Vy"/>
+                <constraint firstItem="0yK-E1-OXp" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" id="E7I-TB-EbN"/>
+                <constraint firstItem="0yK-E1-OXp" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Zfl-uR-UBC"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="presenter" destination="u01-ya-Qyh" id="Thh-zc-Afs"/>
+            </connections>
+            <point key="canvasLocation" x="225.59999999999999" y="-1017.3913043478261"/>
+        </view>
+        <customObject id="u01-ya-Qyh" customClass="FieldButtonTextInputPresenter" customModule="PlatformJedio" customModuleProvider="target">
+            <connections>
+                <outlet property="button" destination="xiH-OR-VFM" id="mPK-bd-3UT"/>
+                <outlet property="titleLabel" destination="xc3-Lf-8Wz" id="4rl-6X-kSo"/>
+            </connections>
+        </customObject>
+    </objects>
+</document>
